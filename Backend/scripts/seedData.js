@@ -3,7 +3,9 @@ import dotenv from 'dotenv';
 import User from '../models/User.js';
 import Category from '../models/Category.js';
 import Product from '../models/Product.js';
+import dns from "node:dns";
 
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 dotenv.config();
 
 const categoriesData = [
